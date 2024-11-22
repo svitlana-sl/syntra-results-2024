@@ -1,0 +1,16 @@
+{
+  "name": "12.design3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy": "surge ./dist one-more-design-syntra.surge.sh",
+    "postdeploy": "start chrome https://one-more-design-syntra.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
