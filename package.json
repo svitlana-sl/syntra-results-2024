@@ -6,8 +6,10 @@
     "dev": "vite --open --host",
     "build": "vite build",
     "preview": "vite preview --open --host",
-    "deploy": "surge ./dist one-more-design-syntra.surge.sh",
-    "postdeploy": "start chrome https://one-more-design-syntra.surge.sh"
+    "deploy-main": "surge ./dist one-more-design-syntra.surge.sh",
+    "postdeploy-main": "start chrome https://one-more-design-syntra.surge.sh",
+    "deploy-develop": "surge ./dist one-more-design-syntra-test.surge.sh",
+    "postdeploy-develop": "start chrome https://one-more-design-syntra-test.surge.sh"
   },
   "keywords": [],
   "author": "",
