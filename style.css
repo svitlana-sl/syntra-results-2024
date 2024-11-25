@@ -1,5 +1,5 @@
 @import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css);
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 :root {
   font-size: 62.5%;
   --LightSlateBlue: hsl(252, 100%, 67%);
@@ -16,6 +16,10 @@
 }
 * {
   box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  min-height: 100vh;
 }
 main {
   display: grid;
@@ -51,6 +55,11 @@ main {
           var(--VioletBlue),
           var(--PersianBlue)
         );
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-name: bounceIn;
+        animation-duration: 500ms;
+        animation-delay: 500ms;
         h3 {
           font-size: 15vw;
           font-weight: 800;
@@ -71,6 +80,11 @@ main {
         margin: 1rem auto;
         line-height: 2.1rem;
       }
+      h2,
+      p {
+        animation-name: fadeInDown;
+        animation-duration: 400ms;
+      }
     }
 
     &:nth-child(2) {
@@ -88,6 +102,10 @@ main {
           gap: 1.5rem;
           padding: 2rem;
           border-radius: 1rem;
+          animation-fill-mode: forwards;
+          animation-name: rollIn;
+          animation-duration: 500ms;
+          animation-delay: 500ms;
           p {
             &:nth-of-type(1) {
               margin-right: auto;
@@ -176,7 +194,7 @@ main {
       grid-template-columns: 1fr 1fr;
       border-radius: 3rem;
       box-shadow: 1rem 1rem 3rem 0rem
-        color-mix(in hsl, var(--LightLavender), 50%, transparent);
+        color-mix(in hsl, var(--LightLavender) 50%, transparent);
       overflow: hidden;
       section {
         &:nth-child(1) {
