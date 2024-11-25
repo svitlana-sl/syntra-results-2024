@@ -165,3 +165,36 @@ main {
     }
   }
 }
+
+@media (min-width: 700px) {
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    main {
+      max-width: 900px;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 3rem;
+      box-shadow: 1rem 1rem 3rem 0rem
+        color-mix(in hsl, var(--LightLavender), 50%, transparent);
+      overflow: hidden;
+      section {
+        &:nth-child(1) {
+          border-radius: 3rem;
+          div {
+            width: 57%;
+            h3 {
+              font-size: 6rem;
+            }
+            h4 {
+              font-size: 1.5rem;
+            }
+          }
+          p {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
